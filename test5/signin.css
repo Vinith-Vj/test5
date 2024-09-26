@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: url(assests/img/bg.jpg.jpg);
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(3, 3, 3, 0.603);
+}
+
+/* 
+.box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    background-color: black;
+} */
+
+nav {
+    display: flex;
+    position: relative;
+    top: 18px;
+    width: 33%;
+    justify-content: center;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+    width: 150px;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        width: 18%;
+    }
+}
+
+@media (max-width: 960px) {
+    nav img {
+        width: 90px;
+    }
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 450px;
+    color: white;
+    padding: 50px;
+    gap: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mail {
+    color: white;
+    padding: 18px 40px 18px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0.5px solid rgba(250, 248, 248, 0.5);
+    background-color: rgba(22, 22, 22, 0.7);
+}
+
+.btn1 {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.email p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn2 {
+    background-color: #2f2e2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.Forgot  {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.email a:hover {
+    color: rgb(180 180 181);
+}
+
+.remember {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.remember input {
+    width: 18px;
+}
+
+.new {
+    display: flex;
+    gap: 3px;
+}
+
+.new a {
+    text-decoration: none;
+    color: white;
+}
+
+.bot {
+    width: 70%;
+}
+
+.bot span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.learn {
+    font-size: 13px;
+}
+
+.bot a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.black {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+        height: auto;
+    }
+/* 
+    .box {
+        opacity: 100%;
+        height: 100vh;
+    } */
+
+    .main {
+        height: auto;
+    }
+
+    .main::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         background-color: black
+    }
+
+    nav {
+        margin-left: 8px;
+        width: 120px;
+    }
+
+    .black {
+        height: 50vh;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .black {
+        height: 70vh;
+    }
+}
+
+
+
+.last {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 60vw;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.7);;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+
+.faq {
+    display: flex;
+    gap: 10%;
+}
+
+.faq01, .faq02 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+    .faq01, .faq02 {
+        flex-direction: column;
+        gap: 13px;
+    }
+}
+
+.faq1, .faq2, .faq3, .faq4 {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .last {
+        margin-left: 2%;
+    }
+}
+
+
+.faq a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn4 {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(250 248 248 / 41%);
+    border-radius: 4px;
+    height: 29px;
+    width: 110px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    align-items: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+/* 
+@media (max-width: 820px) and (max-height: 1180px) {
+    .main {
+        height: 80vh;
+    }
+
+    .box {
+        height: 80vh;
+    }
+
+    .container {
+        height: 68vh;
+    }
+
+    .black {
+        height: 28vh;
+    }
+}
+
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+    .main {
+        height: 82vh;
+    }
+
+    .box {
+        height: 82vh;
+    }
+
+    .container {
+        height: 55vh;
+    }
+
+    .black {
+        height: 23vh;
+    }
+}
+
+
+@media (max-width: 912px) and (max-height: 1368px) {
+    .main {
+        height: 81vh;
+    }
+
+    .box {
+        height: 81vh;
+    }
+
+    .container {
+        height: 55vh;
+    }
+
+    .black {
+        height: 22vh;
+    }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+    .main {
+        height: 66vh;
+    }
+
+    .box {
+        height: 66vh;
+    }
+
+    .last {
+        width: 74vw;
+    }
+}
+
+@media (max-width: 430px) and (max-height: 932px) {
+    .main {
+        height: 66vh;
+    }
+
+    .box {
+        height: 66vh;
+    }
+
+    .last {
+        width: 74vw;
+    }
+}
+
+
+
+@media (max-width: 360px) and (max-height: 740px) {
+    .main {
+        height: 95vh;
+    }
+
+    .box {
+        height: 95vh;
+    }
+/* 
+    .last {
+        width: 74vw;
+    } */
+} */
